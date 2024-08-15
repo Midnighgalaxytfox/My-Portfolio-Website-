@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakenah Aboharb's Professional Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://cdn.openart.ai/editing_generation/oOzBhbwhb2AarEuxX57A/9182b30ffcc249768a198c53418b322b_raw.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        header {
+            height: 70px;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .tabs-content {
+            padding-top: 80px; /* Adjust to ensure content is not hidden under the header */
+        }
+
+        .section {
+            padding: 20px;
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        #portfolio ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #portfolio li {
+            margin: 10px 0;
+        }
+
+        #portfolio a {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+        #portfolio a:hover {
+            text-decoration: underline;
+        }
+
+        .quiz-section {
+            margin-top: 20px;
+        }
+
+        .quiz-section h3 {
+            color: lightblue;
+        }
+
+        .quiz-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .quiz-section li {
+            margin-bottom: 10px;
+        }
+
+        .quiz-section label {
+            cursor: pointer;
+        }
+
+        .quiz-section button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: lightblue;
+            border: none;
+            cursor: pointer;
+        }
+
+        .quiz-section button:hover {
+            background-color: deepskyblue;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* New CSS for paragraphs */
+        p {
+            color: yellow;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            color: pink;
+            text-decoration: none;
+        }
+
+        .contact-info:hover {
+            text-decoration: underline;
+        }
+        ul , #quizForm {
+    color: rgb(207, 200, 225);
+    text-shadow: 
+    2px 2px 3px rgba(28, 16, 163, 0.8)
+    -1px -1px 2px rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="https://media.tenor.com/t5Zx8zFoPjAAAAAC/hacker-hacker-man.gif" alt="Sakenah Aboharb Logo" class="logo">
+            <nav>
+                <a href="#" class="tab-link active" data-target="home">Home</a>
+                <a href="#" class="tab-link" data-target="portfolio">Portfolio</a>
+                <a href="#" class="tab-link" data-target="about">About</a>
+                <a href="#" class="tab-link" data-target="contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="tabs-content">
+        <div id="home" class="section active">
+            <h1>Welcome to Sakenah Aboharb's Portfolio</h1>
+            <p>Explore my work, learn more about me, and get in touch!</p>
+            <img src="https://cdn.openart.ai/editing_generation/oOzBhbwhb2AarEuxX57A/aa986e777bf34188b59fa91c3f195d87_raw.jpg" width="640" height="570" alt="Sakenah Aboharb Logo">
+        </div>
+
+        <div id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <p>Here are some examples of my work:</p>
+            <section>
+                <h3>Projects</h3>
+                <ul>
+                    <li><a href="file-kwlh3Hk2zmjzhe3xzg3hRHyT">Project 1: Team Foxy Coder</a></li>
+                </ul>
+                <p>I have learned a lot through my journey in web development. Working with HTML, CSS, and JavaScript has been an enriching experience that has broadened my understanding of web technologies and their potential. HTML provides the structure for web content, CSS allows for the styling and visual appeal, and JavaScript brings interactivity and dynamism to web pages. Each of these technologies plays a critical role in creating a seamless and engaging user experience. Embracing the learning process has taught me the value of patience, persistence, and creativity.</p>
+                <div class="quiz-section">
+                    <h3>Quiz: Test Your Knowledge</h3>
+                    <form id="quizForm">
+                        <h4>HTML Question:</h4>
+                        <p>What does HTML stand for?</p>
+                        <ul>
+                            <li><label><input type="radio" name="htmlQuestion" value="a"> Hyper Text Markup Language</label></li>
+                            <li><label><input type="radio" name="htmlQuestion" value="b"> Hyperlinks and Text Markup Language</label></li>
+                            <li><label><input type="radio" name="htmlQuestion" value="c"> Home Tool Markup Language</label></li>
+                        </ul>
+
+                        <h4>CSS Question:</h4>
+                        <p>What does CSS stand for?</p>
+                        <ul>
+                            <li><label><input type="radio" name="cssQuestion" value="a"> Creative Style Sheets</label></li>
+                            <li><label><input type="radio" name="cssQuestion" value="b"> Cascading Style Sheets</label></li>
+                            <li><label><input type="radio" name="cssQuestion" value="c"> Computer Style Sheets</label></li>
+                        </ul>
+
+                        <h4>JavaScript Question:</h4>
+                        <p>Which type of language is JavaScript?</p>
+                        <ul>
+                            <li><label><input type="radio" name="jsQuestion" value="a"> Programming Language</label></li>
+                            <li><label><input type="radio" name="jsQuestion" value="b"> Scripting Language</label></li>
+                            <li><label><input type="radio" name="jsQuestion" value="c"> Markup Language</label></li>
+                        </ul>
+
+                        <button type="button" onclick="checkAnswers()">Submit Quiz</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>Certified Nutritionist and Personal Trainer with a robust background in front-end development. Demonstrates a strong commitment to health optimization, fitness, and web technologies. Known for effective emergency response skills and dedication to service excellence. Proficient in HTML, CSS, and JavaScript with hands-on experience in optimizing website performance and user experience.</p>
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:Sakenahaboharb@yahoo.com" class="contact-info">Sakenahaboharb@yahoo.com</a></p>
+            <p>Phone: <a href="tel:248-759-1611" class="contact-info">248-759-1611</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sakenah Aboharb. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.tab-link').forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                document.querySelectorAll('.tab-link').forEach(tab => tab.classList.remove('active'));
+                document.querySelectorAll('.section').forEach(section => section.classList.remove('active'));
+
+                link.classList.add('active');
+                document.getElementById(link.dataset.target).classList.add('active');
+            });
+        });
+
+        function checkAnswers() {
+            const correctAnswers = {
+                htmlQuestion: 'a',
+                cssQuestion: 'b',
+                jsQuestion: 'b'
+            };
+            let score = 0;
+
+            for (const [question, answer] of Object.entries(correctAnswers)) {
+                const selected = document.querySelector(`input[name=${question}]:checked`);
+                if (selected && selected.value === answer) {
+                    score++;
+                }
+            }
+
+            alert(`You scored ${score} out of ${Object.keys(correctAnswers).length}`);
+        }
+    </script>
+</body>
+</html>
